@@ -68,7 +68,7 @@ struct CharactersListView: View {
                     }
                 }
             }
-            .navigationBarTitle("Lista bohaterów", displayMode: .inline)
+            .navigationBarTitle(showNavigationBarTitle ? "Lista bohaterów" : "")
         }
     }
 }

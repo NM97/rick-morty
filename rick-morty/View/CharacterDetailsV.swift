@@ -74,7 +74,7 @@ struct CharacterDetailsView: View {
             }
             .padding()
         }
-        .navigationBarTitle(character.name, displayMode: .inline)
+        .navigationBarTitle("", displayMode: .inline)
         .onAppear {
             viewModel.fetchEpisodes(for: character)
             isFavorite = favoritesManager.isFavorite(characterId: character.id)

@@ -52,7 +52,6 @@ struct EpisodeDetailsView: View {
             }
             .padding()
         }
-        .navigationBarTitle(episode.name, displayMode: .inline)
         .onAppear {
             viewModel.fetchCharactersCount(for: episode)
         }
